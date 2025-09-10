@@ -1,5 +1,18 @@
 # DCI MCP Server - Change Log
 
+## [2025-09-12]
+
+### Improvements
+
+- use the search API
+- removed most of the tools as the search API is now covering everything
+
+## [2025-09-10]
+
+### Dependencies
+
+- Updated dciclient dependency to version 4.1.0 or higher (was unconstrained)
+
 ## [2025-08-12]
 
 ### Dependencies
