@@ -25,12 +25,6 @@ from .tools.component_tools import register_component_tools
 from .tools.date_tools import register_date_tools
 from .tools.file_tools import register_file_tools
 from .tools.job_tools import register_job_tools
-from .tools.pipeline_tools import register_pipeline_tools
-from .tools.pr_tools import register_pr_tools
-from .tools.product_tools import register_product_tools
-from .tools.remoteci_tools import register_remoteci_tools
-from .tools.team_tools import register_team_tools
-from .tools.topic_tools import register_topic_tools
 
 
 def create_server() -> FastMCP:
@@ -59,12 +53,6 @@ def create_server() -> FastMCP:
     register_date_tools(mcp)
     register_job_tools(mcp)
     register_file_tools(mcp)
-    register_pipeline_tools(mcp)
-    register_product_tools(mcp)
-    register_remoteci_tools(mcp)
-    register_team_tools(mcp)
-    register_topic_tools(mcp)
-    register_pr_tools(mcp)
 
     # Register prompts for user interaction
     register_prompts(mcp)
